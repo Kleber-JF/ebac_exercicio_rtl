@@ -1,5 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import Post from '.';
+import {  render, screen } from '@testing-library/react';
 import PostComment from '.';
 
 describe('Teste para o componente PostComment', () => {
@@ -7,4 +6,4 @@ describe('Teste para o componente PostComment', () => {
         render(<PostComment/>);
         expect(screen.getByText('Comentar')).toBeInTheDocument();
     });
-});
+})
